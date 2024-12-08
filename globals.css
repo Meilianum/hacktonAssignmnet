@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Mobile Small */
+@media (max-width: 480px) {
+  body {
+      font-size: 12px; /* Smaller font size for small devices */
+      padding: 10px; /* Reduce padding for small screens */
+  }
+  nav {
+      display: none; /* Hide navigation bar */
+  }
+  .container {
+      width: 100%; /* Full-width containers */
+  }
+}
+
+/* Mobile Large */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+      font-size: 14px; /* Slightly larger font */
+      padding: 15px;
+  }
+  nav {
+      display: block;
+      font-size: 12px; /* Smaller text in navigation */
+  }
+  .container {
+      width: 95%;
+      margin: 0 auto;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+      font-size: 16px; /* Comfortable font size for tablets */
+      padding: 20px;
+  }
+  nav {
+      font-size: 14px; /* Bigger text in navigation */
+      justify-content: space-between;
+  }
+  .container {
+      width: 85%;
+  }
+}
+
+/* Small Laptop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+      font-size: 18px; /* Larger font size */
+      padding: 25px;
+  }
+  nav {
+      font-size: 16px; /* Optimal navigation text size */
+      justify-content: flex-end;
+  }
+  .container {
+      width: 75%;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1441px) {
+  body {
+      font-size: 20px; /* Comfortable font size for large screens */
+      padding: 30px;
+  }
+  nav {
+      font-size: 18px; /* Large navigation text */
+  }
+  .container {
+      width: 70%;
+      margin: 0 auto;
+  }
+}
